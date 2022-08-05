@@ -7,11 +7,12 @@ function ColorButtons() {
       buttons={[
         {
           name: 'Random First',
-          onclick: () => console.log('click first'),
+          className: 'test',
+          onClick: () => console.log('clic first'),
         },
         {
           name: 'Random Last',
-          onclick: () => console.log('click last'),
+          onClick: () => console.log('clic last'),
         },
       ]}
     />

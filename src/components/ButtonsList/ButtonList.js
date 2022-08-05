@@ -8,10 +8,12 @@ function ButtonsList({ buttons }) {
   return (
     <div className="buttons group">
       {
-        buttons.map(({ name }, index) => (
+        buttons.map(({ name, className, ...rest }, index) => (
           <button
             type="button"
             key={index}
+            className={`button ${className || ''}`}
+            {...rest}
           >
             {name}
           </button>
