@@ -7,7 +7,7 @@ function TextColors() {
     <div className="text-colors">
       <SpanColor color="#f0f" />
       -
-      <SpanColor color="0f0" />
+      <SpanColor color="#0f0" />
     </div>
   );
 }
