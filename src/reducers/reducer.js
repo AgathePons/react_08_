@@ -12,7 +12,9 @@ const initialState = {
 };
 
 function reducer(state = initialState, action = {}) {
-  console.log(`reducer: ${{ state, action }}`);
+/*   console.log('reducer:');
+  console.log(state);
+  console.log(action); */
 
   switch (action.type) {
     case SET_FIRST_COLOR:
