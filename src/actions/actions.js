@@ -1,5 +1,6 @@
 export const SET_FIRST_COLOR = 'SET_FIRST_COLOR';
 export const SET_LAST_COLOR = 'SET_LAST_COLOR';
+export const CHANGE_DIRECTION = 'CHANGE_DIRECTION';
 
 /**
  * Action to set the first color
@@ -16,4 +17,12 @@ export function actionSetFirstColor(color) {
  */
 export function actionSetLastColor(color) {
   return { type: SET_LAST_COLOR, payload: color };
+}
+/**
+ * Action to change the direction of the gradient (in degree)
+ * @param {Number} degree the degree of the direction
+ * @returns {Actions}
+ */
+export function actionChangeDirection(degree) {
+  return { type: CHANGE_DIRECTION, payload: degree };
 }

@@ -2,6 +2,7 @@
 import {
   SET_FIRST_COLOR,
   SET_LAST_COLOR,
+  CHANGE_DIRECTION,
 } from '../actions/actions';
 
 const initialState = {
@@ -24,6 +25,11 @@ function reducer(state = initialState, action = {}) {
         ...state,
         nbColors: state.nbColors + 1,
         lastColor: action.payload,
+      };
+    case CHANGE_DIRECTION:
+      return {
+        ...state,
+        direction: `${action.payload}deg`,
       };
     default:
       return state;
