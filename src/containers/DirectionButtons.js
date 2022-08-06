@@ -12,15 +12,37 @@ function DirectionButtons() {
         {
           name: 'to left',
           onClick: () => {
-            console.log('clic to left');
             dispatch(actionChangeDirection(270));
           },
         },
         {
           name: 'to right',
           onClick: () => {
-            console.log('clic to right');
             dispatch(actionChangeDirection(90));
+          },
+        },
+        {
+          name: 'to bottom',
+          onClick: () => {
+            dispatch(actionChangeDirection(180));
+          },
+        },
+        {
+          name: 'to top',
+          onClick: () => {
+            dispatch(actionChangeDirection(0));
+          },
+        },
+        {
+          name: 'to top right',
+          onClick: () => {
+            dispatch(actionChangeDirection(45));
+          },
+        },
+        {
+          name: 'to bottom left',
+          onClick: () => {
+            dispatch(actionChangeDirection(225));
           },
         },
       ]}
