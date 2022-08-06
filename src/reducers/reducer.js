@@ -1,4 +1,8 @@
-// TODO import actions
+// == Import Actions
+import {
+  SET_FIRST_COLOR,
+  SET_LAST_COLOR,
+} from '../actions/actions';
 
 const initialState = {
   firstColor: '#ffffff',
@@ -9,7 +13,23 @@ const initialState = {
 
 function reducer(state = initialState, action = {}) {
   console.log(`reducer: ${{ state, action }}`);
-  // TODO switch cases of action types
+
+  switch (action.type) {
+    case SET_FIRST_COLOR:
+      return {
+        ...state,
+        nbColors: state.nbColors + 1,
+        firstColor: action.payload,
+      };
+    case SET_LAST_COLOR:
+      return {
+        ...state,
+        nbColors: state.nbColors + 1,
+        lastColor: action.payload,
+      };
+    default:
+      return state;
+  }
 }
 
 export default reducer;
