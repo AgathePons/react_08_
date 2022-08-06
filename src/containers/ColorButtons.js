@@ -35,6 +35,13 @@ function ColorButtons() {
             dispatch(actionSetLastColor(randomHexColor()));
           },
         },
+        {
+          name: 'Set beautiful',
+          onClick: () => {
+            dispatch(actionSetFirstColor('#f0f'));
+            dispatch(actionSetLastColor('#0f0'));
+          },
+        },
       ]}
     />
   );
