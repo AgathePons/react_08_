@@ -4,6 +4,7 @@ import ColorButtons from './ColorButtons';
 import TextColors from './textColors';
 import GradientContainer from './GradientContainer';
 import DirectionButtons from './DirectionButtons';
+import DirectionInput from './directionInput';
 
 // == Composant
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <TextColors />
       <GradientContainer />
       <DirectionButtons />
+      <DirectionInput />
     </div>
   );
 }
