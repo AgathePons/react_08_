@@ -16,14 +16,12 @@ function ColorButtons() {
           name: 'Random First',
           className: 'test',
           onClick: () => {
-            console.log('clic first');
             dispatch(actionSetFirstColor(randomHexColor()));
           },
         },
         {
           name: 'Random All',
           onClick: () => {
-            console.log('clic all');
             dispatch(actionSetFirstColor(randomHexColor()));
             dispatch(actionSetLastColor(randomHexColor()));
           },
@@ -31,7 +29,6 @@ function ColorButtons() {
         {
           name: 'Random Last',
           onClick: () => {
-            console.log('clic first');
             dispatch(actionSetLastColor(randomHexColor()));
           },
         },
