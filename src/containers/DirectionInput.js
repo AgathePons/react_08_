@@ -12,7 +12,6 @@ function DirectionInput() {
   const max = 360;
 
   const handleInputChange = (event) => {
-    console.log(`input: ${event.target.value}`);
     const newInputValue = Math.max(min, Math.min(max, Number(event.target.value)));
     dispatch(actionChangeInput(newInputValue));
     dispatch(actionChangeDirection(newInputValue));

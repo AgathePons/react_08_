@@ -1,0 +1,40 @@
+form.input {
+  margin-top: 1rem;
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input {
+      border: 1px solid transparent;
+      font-family: inherit;
+      font-weight: inherit;
+      border-radius: 4px;
+      box-shadow: none;
+      font-size: 1rem;
+      height: 2.5em;
+      position: relative;
+      background-color: #fff;
+      border-color: #dbdbdb;
+      color: #363636;
+      cursor: pointer;
+      padding: calc(.5em - 1px) 1em;
+      text-align: center;
+      white-space: nowrap;
+      line-height: 1.5;
+      vertical-align: top;
+      margin-left: 1rem;
+    }
+    input:hover {
+      border-color: #b5b5b5;
+      color: #363636;
+    }
+    input:focus {
+      border-color: #3273dc;
+      color: #363636;
+    }
+    input:active {
+      border-color: #4a4a4a;
+      color: #363636;
+    }
+  }
+}

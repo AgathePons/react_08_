@@ -1,0 +1,20 @@
+.gradient-code {
+  border: 1px solid transparent;
+  font-family: monospace;
+  font-weight: inherit;
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 1rem;
+  height: 2.5em;
+  position: relative;
+  background-color: #f1f1f1;
+  border-color: #dbdbdb;
+  color: #363636;
+  cursor: text;
+  padding: calc(.5em - 1px) 1em;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1.5;
+  vertical-align: top;
+  margin-bottom: 1rem;
+}

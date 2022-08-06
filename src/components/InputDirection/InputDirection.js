@@ -9,21 +9,19 @@ function InputDirection({ inputValue, onInputChange, onInputSubmit }) {
       className="input"
       onSubmit={onInputSubmit}
     >
-      <label
-        htmlFor="direction"
-      >
+      <label htmlFor="direction">
         Direction in degree
+        <input
+          type="number"
+          id="direction"
+          name="direction"
+          min="0"
+          max="360"
+          required
+          value={inputValue}
+          onChange={onInputChange}
+        />
       </label>
-      <input
-        type="number"
-        id="direction"
-        name="direction"
-        min="0"
-        max="360"
-        required
-        value={inputValue}
-        onChange={onInputChange}
-      />
     </form>
   );
 }
