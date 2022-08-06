@@ -1,6 +1,5 @@
 // == Import
 import { useDispatch } from 'react-redux';
-import store from '../store/store';
 import { actionSetFirstColor, actionSetLastColor } from '../actions/actions';
 
 import randomHexColor from '../utils';
