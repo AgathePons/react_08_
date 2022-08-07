@@ -2,14 +2,17 @@
 
 /* Specific */
 body {
-  // TODO to remove
-  background: #999;
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   line-height: 1.2;
   font-size: 1.2rem;
@@ -28,16 +31,27 @@ body {
 }
 
 .app {
-  margin: 0 auto;
-  padding: 3rem;
-  max-width: 660px;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+  .app-container {
+    width: 100vw;
+    height: 100vh;
+    .element-container {
+      margin: 0 auto;
+      padding: 3rem;
+      max-width: 660px;
+    }
+  }
 }
 
 .toggle-container {
   padding: 1rem;
 }
 
-.text-colors{
+.text-colors {
   font-family: monospace;
   display: flex;
   justify-content: space-around;
@@ -46,5 +60,3 @@ body {
   font-size: 1.5rem;
   text-shadow: 1px 1px 3px #999;
 }
-
-
