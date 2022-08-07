@@ -7,7 +7,7 @@ function Gradient({ direction, firstColor, lastColor }) {
   const style = {
     background: `linear-gradient(${direction},${firstColor},${lastColor})`,
   };
-  console.log(`background: linear-gradient(${direction},${firstColor},${lastColor})`);
+  // console.log(`background: linear-gradient(${direction},${firstColor},${lastColor})`);
   return (
     <div style={style} className="gradient" />
   );

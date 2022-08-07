@@ -4,6 +4,7 @@ import {
   SET_LAST_COLOR,
   CHANGE_DIRECTION,
   CHANGE_INPUT,
+  CHANGE_CHECKBOX,
 } from '../actions/actions';
 
 const initialState = {
@@ -12,6 +13,7 @@ const initialState = {
   direction: '90deg',
   nbColors: 0,
   inputValue: 90,
+  checkboxValue: false,
 };
 
 function reducer(state = initialState, action = {}) {
@@ -38,6 +40,11 @@ function reducer(state = initialState, action = {}) {
       return {
         ...state,
         inputValue: Number(action.payload),
+      };
+    case CHANGE_CHECKBOX:
+      return {
+        ...state,
+        checkboxValue: action.payload,
       };
     default:
       return state;

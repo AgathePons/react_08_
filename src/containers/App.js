@@ -1,5 +1,6 @@
 // == Import
 import NbColors from './NbColors';
+import TogglerContainer from './ToggleContainer';
 import ColorButtons from './ColorButtons';
 import TextColors from './textColors';
 import GradientContainer from './GradientContainer';
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="app">
       <NbColors />
+      <TogglerContainer />
       <ColorButtons />
       <TextColors />
       <GradientContainer />

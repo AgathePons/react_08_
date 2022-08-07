@@ -2,6 +2,7 @@ export const SET_FIRST_COLOR = 'SET_FIRST_COLOR';
 export const SET_LAST_COLOR = 'SET_LAST_COLOR';
 export const CHANGE_DIRECTION = 'CHANGE_DIRECTION';
 export const CHANGE_INPUT = 'CHANGE_INPUT';
+export const CHANGE_CHECKBOX = 'CHANGE_CHECKBOX';
 
 /**
  * Action to set the first color
@@ -34,4 +35,12 @@ export function actionChangeDirection(degree) {
  */
 export function actionChangeInput(inputValue) {
   return { type: CHANGE_INPUT, payload: inputValue };
+}
+/**
+ * Action to change the checkbox value (toggle ON/OFF)
+ * @param {Boolan} checkboxValue the value of the checkbox (toggle ON/OFF)
+ * @returns {Action}
+ */
+export function actionChangeCheckbox(checkboxValue) {
+  return { type: CHANGE_CHECKBOX, payload: checkboxValue };
 }

@@ -10,7 +10,6 @@ function InputDirection({ inputValue, onInputChange, onInputSubmit }) {
       onSubmit={onInputSubmit}
     >
       <label htmlFor="direction">
-        Direction in degree
         <input
           type="number"
           id="direction"
