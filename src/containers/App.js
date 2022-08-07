@@ -1,4 +1,5 @@
 // == Import
+import AppContainer from './AppContainer';
 import NbColors from './NbColors';
 import TogglerContainer from './ToggleContainer';
 import ColorButtons from './ColorButtons';
@@ -12,14 +13,21 @@ import DirectionInput from './DirectionInput';
 function App() {
   return (
     <div className="app">
-      <NbColors />
-      <TogglerContainer />
-      <ColorButtons />
-      <TextColors />
-      <GradientContainer />
-      <GradientCodeContainer />
-      <DirectionButtons />
-      <DirectionInput />
+      <AppContainer
+        element={(
+          <>
+            <NbColors />
+            <TogglerContainer />
+            <ColorButtons />
+            <TextColors />
+            <GradientContainer />
+            <GradientCodeContainer />
+            <DirectionButtons />
+            <DirectionInput />
+          </>
+        )}
+      />
+
     </div>
   );
 }
