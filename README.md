@@ -1,5 +1,7 @@
 # Discover Redux
 
+The app is up and running **[--> HERE <--](http://ns3251440.ip-87-98-217.eu/agathe-pons/gradient_app_react_redux/dist/)**.
+
 ## Comprendre le store
 
 - store
