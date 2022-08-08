@@ -17,7 +17,9 @@ module.exports = {
   ],
   output: {
     path: paths.build,
-    publicPath: '/',
+    // before build, replace "/" by the full path to dist
+    // for this project : "/dev/react_08_redux_gradient/dist/"
+    publicPath: '/dev/react_08_redux_gradient/dist/',
     filename: 'js/[name].[contenthash].js',
   },
   resolve: {

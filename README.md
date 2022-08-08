@@ -17,7 +17,7 @@
 
 ![redux flow](./Z_readme_img/flow.svg)
 
-# UseSelector
+## UseSelector
 
 ## Pseudo code
 
@@ -113,6 +113,6 @@ const store = createStore(monReducer);
 export default store;
 ```
 
-## Résultat de base
+## Résultat
 
 ![gradient app](Z_readme_img/gradient.png)
