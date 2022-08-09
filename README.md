@@ -11,6 +11,11 @@ The app is up and running **[--> HERE <--](http://ns3251440.ip-87-98-217.eu/agat
 
 ![state et store](./Z_readme_img/with-store.png)
 
+En plus d'être lourd et compliqué de devoir faire circuler les données de parent en enfant, cela **déclanche un re-render de chaque composant traversé** par la donnée à acheminer.
+Dans l'autre sens également, lorsqu'on a une callback à faire remonter au parent, il fallait également qu'elle remonte d'enfant en parent jusqu'en haut.
+
+Grâce à Redux, on **centralise tout dans le store**, et si un composant à besoin d'une donnée, ou qu'une donnée change, la donnée en question est directement distribuée au composant qui en a besoin, et seul le composant en question est re-render.
+
 ## Identifier les composants
 
 - store
